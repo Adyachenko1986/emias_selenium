@@ -1,4 +1,4 @@
-package emias.disp;
+package emias.disp.regress;
 
 import emias.AbstractTestGrid;
 import emias.testngRetryCount.RetryCountIfFailed;
