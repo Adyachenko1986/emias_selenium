@@ -235,6 +235,11 @@ public class SQLDemonstration extends AbstractPage {
     @Step("Создаю расписание для врача {docprvdid} (Ай Бо Лит АвтоТест)")
     public static void createShedule(String docprvdid) throws IOException, SQLException {
         //сгенерировать одну ячейку на сегодня
+        HltDoctorTimeTableEntity hltDtt = new HltDoctorTimeTableEntity();
+
+
+
+
         FileInputStream fstream = new FileInputStream("src/main/resources/sql/" + "select_top_10000___from_hlt_DoctorTimeTa.tsv");
         BufferedReader br = new BufferedReader(new InputStreamReader(fstream));
         String url = connectionUrl +
