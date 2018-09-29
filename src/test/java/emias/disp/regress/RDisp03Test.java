@@ -2,7 +2,7 @@
  * тут мы заходим в журнал и проверяем что шаблоны соответствуют мероприятиям
  */
 
-package emias.disp;
+package emias.disp.regress;
 
 import com.codeborne.selenide.Condition;
 import emias.AbstractTestGrid;
@@ -25,5 +25,4 @@ public class RDisp03Test extends AbstractTestGrid {
         page.servicesPage().zapolnenieProfile1();
         $(By.xpath("//*[contains(text(),'(100%)')]")).shouldBe(Condition.visible);
     }
-
 }

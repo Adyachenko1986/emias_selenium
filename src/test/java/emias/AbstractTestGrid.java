@@ -8,8 +8,8 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.*;
 import pages.Pages;
+import pages.utilities.HibernateSession;
 import pages.utilities.RunSeleniumGrid;
-import pages.utilities.StringGenerator;
 import pages.utilities.WebDriverInstansiator;
 
 import java.io.IOException;
@@ -32,7 +32,7 @@ public class AbstractTestGrid {
         AbstractTestGrid.login = login;
         AbstractTestGrid.pass = pass;
         RunSeleniumGrid.run();
-//        HibernateSession.run();
+        HibernateSession.run();
     }
 
     @AfterSuite(alwaysRun = true)
@@ -48,7 +48,6 @@ public class AbstractTestGrid {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide().screenshots(true).savePageSource(false));
         page = new Pages();
         beforecdCD = new EnterCalldoctor();
-        nameGen = new StringGenerator().generator();
     }
 
     @RetryCountIfFailed(2)

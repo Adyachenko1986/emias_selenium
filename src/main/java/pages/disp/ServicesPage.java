@@ -34,10 +34,9 @@ public class ServicesPage extends AbstractPage {
     SelenideElement Alarma_MedZapisUspeshnoPodpisana = $(By.xpath(".//*[contains(text(),'Медицинская запись успешно подписана.')]"));
 
     public ServicesPage() {
-
     }
 
-    public void zapolnenieProfile1() throws InterruptedException {
+    public void zapolnenieProfile1() {
         switchAllServicesTap()
                 .fillMeasureArtPressure()
                 .fillMeasureOpros_Anketirovanie()
@@ -275,8 +274,7 @@ public class ServicesPage extends AbstractPage {
                 .$(By.xpath(".//*[contains(text(),'Без отклонений')]")).click();
 
 //        Thread.sleep(700);
-        MeasureOsmotrTerapevta.hover();
-        MeasureOsmotrTerapevta.click();
+        MeasureOsmotrTerapevta.hover().click();
         return this;
     }
 

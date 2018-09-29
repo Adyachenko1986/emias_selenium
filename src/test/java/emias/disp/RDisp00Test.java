@@ -7,13 +7,15 @@ import org.testng.annotations.Test;
 import pages.sql.SQLDemonstration;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.sql.SQLException;
 import java.util.ArrayList;
 
 public class RDisp00Test extends AbstractTestGrid {
 
     @Test(description = "Обнуляю карты диспансеризации")
     @RetryCountIfFailed(2)
-    public void cleanBeforeDisp() throws FileNotFoundException {
+    public void cleanBeforeDisp() throws IOException, SQLException {
         setDefaultCard();
         setTestServices();
         createShedule();
@@ -36,7 +38,7 @@ public class RDisp00Test extends AbstractTestGrid {
     }
 
     @Step("Создание расписания для врачей")
-    public void createShedule() throws FileNotFoundException {
+    public void createShedule() throws IOException, SQLException {
         SQLDemonstration.deleteSheduleByPrvdid("1285");
         SQLDemonstration.createShedule("1285");
     }

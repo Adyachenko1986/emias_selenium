@@ -1,5 +1,6 @@
-package emias;
+package emias.calldoctor;
 
+import emias.AbstractTestGrid;
 import emias.testngRetryCount.RetryCountIfFailed;
 import io.qameta.allure.Step;
 import org.testng.annotations.Test;
@@ -10,7 +11,7 @@ import java.util.ArrayList;
 
 import static com.codeborne.selenide.Selenide.switchTo;
 
-public class BeforeTest extends AbstractTestGrid {
+public class BeforeCalldoctor extends AbstractTestGrid {
 
     @Test(description = "Завершаю вызовы у тестовых врачей и создаю новое расписание на сегодня")
     @RetryCountIfFailed(2)
