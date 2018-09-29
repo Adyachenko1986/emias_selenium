@@ -6,11 +6,14 @@ import io.qameta.allure.Step;
 import org.testng.annotations.Test;
 import pages.sql.SQLDemonstration;
 
+import java.io.IOException;
+import java.sql.SQLException;
+
 public class BeforeDisp extends AbstractTestGrid {
 
     @Test(description = "Завершаю вызовы у тестовых врачей и создаю новое расписание на сегодня")
     @RetryCountIfFailed(2)
-    public void cleanBeforeCallDoctorTests() {
+    public void cleanBeforeCallDoctorTests() throws IOException, SQLException {
 //        page.loginPage().login(site, login, pass);
 //        switchTo().window(0);
 //        page.homePage().manageSheduleBtn();
@@ -18,7 +21,7 @@ public class BeforeDisp extends AbstractTestGrid {
     }
 
     @Step("Создаю расписание врача")
-    public void createDoctorShedule() {
+    public void createDoctorShedule() throws IOException, SQLException {
 //        ArrayList<String> doctors = new ArrayList<>();
 //        doctors.add("Темников Дмитрий Олегович");
 //        doctors.add("Моков Павел Александрович");
@@ -38,6 +41,6 @@ public class BeforeDisp extends AbstractTestGrid {
 //            page.doctorMethods().selectDoctor(doctor_num);
 //        }
 
-        SQLDemonstration.createShedule();//создать расписание на 7 дней вперед
+        SQLDemonstration.createShedule("");//создать расписание на 7 дней вперед
     }
 }

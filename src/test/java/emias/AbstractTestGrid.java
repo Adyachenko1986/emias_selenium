@@ -8,7 +8,6 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.*;
 import pages.Pages;
-import pages.utilities.HibernateSession;
 import pages.utilities.RunSeleniumGrid;
 import pages.utilities.WebDriverInstansiator;
 
@@ -32,7 +31,7 @@ public class AbstractTestGrid {
         AbstractTestGrid.login = login;
         AbstractTestGrid.pass = pass;
         RunSeleniumGrid.run();
-        HibernateSession.run();
+//        HibernateSession.run();
     }
 
     @AfterSuite(alwaysRun = true)

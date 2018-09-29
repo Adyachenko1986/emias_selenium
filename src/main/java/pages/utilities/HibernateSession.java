@@ -6,7 +6,7 @@ import pages.sql.HltCallDoctorEntity;
 public class HibernateSession {
     public static Session session;
 
-    void run() {
+    public void run() {
         session = HibernateSessionFactory.getSessionFactory().openSession();
         session.beginTransaction();
 
