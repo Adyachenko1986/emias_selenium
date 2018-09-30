@@ -47,17 +47,11 @@
           <element id="library" level="project" name="Maven: org.aspectj:aspectjrt:1.9.1" />
           <element id="library" level="project" name="Maven: org.jooq:joor-java-8:0.9.9" />
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.25" />
-          <element id="library" level="project" name="Maven: javax.xml.bind:jaxb-api:2.3.0" />
-          <element id="library" level="project" name="Maven: com.sun.xml.bind:jaxb-impl:2.3.0.1" />
-          <element id="library" level="project" name="Maven: com.sun.xml.bind:jaxb-core:2.3.0.1" />
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-nop:1.7.25" />
           <element id="library" level="project" name="Maven: org.apache.commons:commons-text:1.4" />
           <element id="library" level="project" name="Maven: com.codeborne:selenide:4.12.2" />
           <element id="library" level="project" name="Maven: net.lightbody.bmp:browsermob-core:2.1.5" />
           <element id="library" level="project" name="Maven: net.lightbody.bmp:littleproxy:1.1.0-beta-bmp-17" />
-          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.8.9" />
-          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.8.9" />
-          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.8.9" />
           <element id="library" level="project" name="Maven: dnsjava:dnsjava:2.1.8" />
           <element id="library" level="project" name="Maven: org.slf4j:jcl-over-slf4j:1.7.25" />
           <element id="library" level="project" name="Maven: com.jcraft:jzlib:1.1.3" />
@@ -81,7 +75,6 @@
           <element id="library" level="project" name="Maven: org.rauschig:jarchivelib:0.8.0" />
           <element id="library" level="project" name="Maven: org.apache.commons:commons-compress:1.14" />
           <element id="library" level="project" name="Maven: org.jsoup:jsoup:1.11.3" />
-          <element id="library" level="project" name="Maven: com.googlecode.json-simple:json-simple:1.1" />
           <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.2.3" />
           <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.2.3" />
           <element id="library" level="project" name="Maven: org.springframework:spring-core:5.1.0.RELEASE" />
@@ -104,8 +97,9 @@
           <element id="library" level="project" name="Maven: dom4j:dom4j:1.6.1" />
           <element id="library" level="project" name="Maven: org.hibernate.common:hibernate-commons-annotations:5.0.4.Final" />
           <element id="library" level="project" name="Maven: org.hibernate:hibernate-entitymanager:5.3.6.Final" />
-          <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.13" />
-          <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.13" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.7" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.0" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.9.7" />
         </element>
       </element>
       <element id="directory" name="META-INF">
