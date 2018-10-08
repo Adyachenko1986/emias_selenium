@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CalldoctorTest" thread-count="8" parallel="classes">
+    <!--<parameter name="config" value="local.conf.json"/>-->
+    <!--<parameter name="environment" value="chrome"/>-->
+    <parameter name="site" value="http://emias.mosreg.ru/demonstration"/>
+    <parameter name="login" value="temnikov"/>
+    <parameter name="pass" value="1215"/>
+    <parameter name="headless" value="false"/>
+
+    <listeners>
+        <listener class-name="emias.testngRetryCount.AnnotationTransformer"/>
+    </listeners>
+
+    <test name="ChromeTest" verbose="1" parallel="true">
+        <parameter name="browser" value="chrome"/>
+        <groups>
+            <run>
+                <include name="test"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="emias.calldoctor.regress.CancelCallTest"/>
+        </classes>
+    </test>
+</suite>
